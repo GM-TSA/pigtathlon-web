@@ -1,0 +1,67 @@
+<script>
+    // Navigation bar script
+    var navigationBarElem;
+
+    var navigaionBarState = {
+        openNav: window.innerWidth > window.innerHeight,
+        dropdownOpen: false
+    };
+
+    const updateNavigationBar = (newState) => {
+        if (newState.openNav) {
+            navigationBarElem.innerHTML = `
+                <ul id="open-top-nav">
+                    <li><a href="/w/home">Home</a></li>
+                    <li><a href="/w/subscribe">Subscribe</a></li>
+                    <li><a href="/w/about">About</a></li>
+                    <li><a href="/w/contact">Contact</a></li>
+                </ul>
+            `;
+        } else {
+            navigationBarElem.innerHTML = `
+            <div id="hamburger-top-nav">
+                <img id="nav-hamburger-button" src="/static/hamburger.svg" alt="Navigation dropdown button"/>
+                ${newState.dropdownOpen ? `
+                    <ul>
+                        <li><a href="/w/home">Home</a></li>
+                        <li><a href="/w/subscribe">Subscribe</a></li>
+                        <li><a href="/w/about">About</a></li>
+                        <li><a href="/w/contact">Contact</a></li>
+                    </ul>
+                ` : ""}
+            </div>
+            `;
+        }
+        navigaionBarState = newState;
+    };
+
+    window.addEventListener('load', () => {
+        navigationBarElem = document.getElementById("top-nav");
+        updateNavigationBar(navigaionBarState);
+    });
+
+    window.addEventListener('resize', () => {
+        var newNavigationBarState = {
+            openNav: window.innerWidth > window.innerHeight,
+            dropdownOpen: window.innerWidth > window.innerHeight ? false : navigaionBarState.dropdownOpen
+        };
+
+        if (
+            newNavigationBarState.openNav !== navigaionBarState.openNav ||
+            newNavigationBarState.dropdownOpen !== navigaionBarState.dropdownOpen
+        ) {
+            updateNavigationBar(newNavigationBarState);
+        }
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target.id === "nav-hamburger-button") {
+            updateNavigationBar({openNav: false, dropdownOpen: !navigaionBarState.dropdownOpen});
+        } else if (event.target.id !== "hamburger-top-nav" && navigaionBarState.dropdownOpen !== false) {
+            updateNavigationBar({openNav: false, dropdownOpen: false});
+        }
+    });
+</script>
+
+<div id="top-nav">
+</div>
