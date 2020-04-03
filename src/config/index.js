@@ -2,7 +2,7 @@ function getEnvironmentVariable (name) {
     if (process.env[name]) {
         return process.env[name];
     } else {
-        console.error("Event variable \"" + name + "\" passed. Exiting...");
+        console.error("Event variable \"" + name + "\" not passed. Exiting...");
         process.exit();
     }
 }
