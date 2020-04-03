@@ -1,3 +1,4 @@
 module.exports = {
-    page: require('./page')
+    page: require('./page'),
+    mailchimp: require('./mailchimp')
 };
