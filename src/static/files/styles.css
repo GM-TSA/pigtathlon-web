@@ -20,9 +20,28 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Courier New', Courier, monospace;
 }
 
+p {
+  font-size: smaller;
+}
+
 a {
   color: #d9d9ff;
   text-decoration: none;
+}
+
+hr {
+  width: 70%;
+  margin: 1.5em auto 0 auto;
+  border-top: 0.1em dashed #222222;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+hr.very-minor {
+  width: 50%;
+  margin: 0 auto 0 auto;
+  border-top: 0.1em dashed #303030;
 }
 
 #open-top-nav {
@@ -112,6 +131,7 @@ a {
 
 #footer ul li {
   display: inline-block;
+  margin: 0 0.5em 0 0.5em;
 }
 
 #footer h3 a {

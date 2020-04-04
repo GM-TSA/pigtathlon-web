@@ -46,6 +46,19 @@ app.get(
 
 app.get(
     [
+        "/w/news",
+        "/w/news/index.html"
+    ],
+    w.news.news
+);
+
+app.get(
+    "/w/news/posts/:postFileName",
+    w.news.posts.post
+);
+
+app.get(
+    [
         "/w/about",
         "/w/about/index.html"
     ],

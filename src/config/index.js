@@ -8,7 +8,7 @@ function getEnvironmentVariable (name) {
 }
 
 module.exports = {
-    mailchimpAPIKey: getEnvironmentVariable("MAILCHIMP_API_KEY"),
     mailchimpCode: getEnvironmentVariable("MAILCHIMP_CODE"),
-    mailchimpNewsletterClassicForm: getEnvironmentVariable("MAILCHIMP_NEWSLETTER_CLASSIC_FORM")
+    mailchimpNewsletterClassicForm: getEnvironmentVariable("MAILCHIMP_NEWSLETTER_CLASSIC_FORM"),
+    googleAnalyticsId: getEnvironmentVariable("GOOGLE_ANALYTICS_ID")
 };
