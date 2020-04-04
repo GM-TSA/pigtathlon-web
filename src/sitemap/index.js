@@ -19,9 +19,9 @@ for (let i in newsPostsList) {
                 <news:name>Pigtathlon News</news:name>
                 <news:language>en</news:language>
             </news:publication>
-            <news:publication_date>${dateString}</news:publication_date>
+                <news:publication_date>${dateString}</news:publication_date>
                 <news:title>${post.title} - Pigtathlon</news:title>
-            </news:news>
+            </news:publication>
         </news:news>
     </url>`
 }
