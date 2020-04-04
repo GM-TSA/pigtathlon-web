@@ -124,14 +124,14 @@ hr.very-minor {
   text-align: center;
 }
 
-#footer ul li img {
-  width: 3em;
-  height: 3em;
-}
-
 #footer ul li {
   display: inline-block;
   margin: 0 0.5em 0 0.5em;
+}
+
+#footer ul li img {
+  width: 3em;
+  height: 3em;
 }
 
 #footer h3 a {
