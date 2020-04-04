@@ -16,12 +16,6 @@ body {
   padding: 0.5em;
 }
 
-footer {
-  color: #d9ffd9;
-  font-size: smaller;
-  margin-top: 5em;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Courier New', Courier, monospace;
 }
@@ -46,6 +40,7 @@ a {
 #open-top-nav li a {
   display: block;
   text-align: center;
+  font-size: larger;
   padding: 10px;
 }
 
@@ -90,4 +85,35 @@ a {
   background: none;
   clear:left;
   font:14px Helvetica,Arial,sans-serif;
+}
+
+#footer {
+  background-color: #2a2a2a;
+  color: #d9ffd9;
+  font-size: smaller;
+  padding: 2em 0.5em 2em 0.5em;
+  margin: 0 auto 0 auto;
+  max-width: 100vh;
+  border-top: 0.1em dashed #222222;
+}
+
+#footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+#footer ul li img {
+  width: 3em;
+  height: 3em;
+}
+
+#footer ul li {
+  display: inline-block;
+}
+
+#footer h3 a {
+  text-decoration: underline;
 }

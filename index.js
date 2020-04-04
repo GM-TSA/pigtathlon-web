@@ -22,6 +22,8 @@ const w = require('./src/w');
 const api = require('./src/api');
 const config = require('./src/config');
 
+app.get("/favicon.ico", (req, res) => {res.sendFile(__dirname + "/src/static/files/favicon.ico")});
+
 app.get("/static/*", static);
 
 app.get(
