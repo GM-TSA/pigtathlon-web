@@ -20,9 +20,11 @@ const static = require('./src/static');
 const modules = require('./src/modules');
 const w = require('./src/w');
 const api = require('./src/api');
+const sitemap = require('./src/sitemap');
 const config = require('./src/config');
 
 app.get("/favicon.ico", (req, res) => {res.sendFile(__dirname + "/src/static/files/favicon.ico")});
+app.get("/sitemap.xml", sitemap);
 
 app.get("/static/*", static);
 

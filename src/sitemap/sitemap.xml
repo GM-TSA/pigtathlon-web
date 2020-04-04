@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+    <url>
+        <loc>http://www.pigtathlon.claytondoesthings.xyz/w/home</loc>
+        <lastmod>2020-04-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1</priority>
+    </url>
+    <url>
+        <loc>http://www.pigtathlon.claytondoesthings.xyz/w/subcribe</loc>
+        <lastmod>2020-04-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://www.pigtathlon.claytondoesthings.xyz/w/news</loc>
+        <lastmod>2020-04-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <newsPosts/>
+    <url>
+        <loc>http://www.pigtathlon.claytondoesthings.xyz/w/about</loc>
+        <lastmod>2020-04-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://www.pigtathlon.claytondoesthings.xyz/w/contact</loc>
+        <lastmod>2020-04-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset> 
