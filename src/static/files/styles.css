@@ -137,3 +137,45 @@ hr.very-minor {
 #footer h3 a {
   text-decoration: underline;
 }
+
+#news-posts-ul {
+  list-style: none;
+  text-align: left;
+  background-color: #252525;
+}
+
+#news-posts-ul li {
+  padding: 0.5em;
+}
+
+#news-posts-ul li:hover {
+  cursor: pointer;
+}
+
+#news-posts-ul li p {
+  margin: 0;
+  font-size: large;
+}
+
+#news-posts-ul li ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#news-posts-ul li ul li {
+  padding: 0;
+}
+
+#news-posts-ul li ul li h2 {
+  text-decoration: underline;
+  float: left;
+  margin: 0;
+}
+
+#news-posts-ul li ul li .timestamp-date {
+  display: none;
+  float: right;
+  font-size: large;
+}

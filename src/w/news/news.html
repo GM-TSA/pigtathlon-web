@@ -1,4 +1,19 @@
 <h1>News</h1>
 <ul id="news-posts-ul">
+    <script>
+        function openPost(path) {
+            window.location.href = "/w/news/posts/" +path;
+        }
+        window.addEventListener("load", () => {
+            var dateElems = document.getElementById("news-posts-ul").getElementsByClassName("timestamp-date");
+            for (let i = 0; i < dateElems.length; i++) {
+                let date = new Date(Number.parseInt(dateElems[i].innerText)*1000);
+                let dtf = Intl.DateTimeFormat('en', {year: 'numeric', month: 'short', day: 'numeric'});
+                let parts = dtf.formatToParts(date);
+                dateElems[i].innerText = `${parts[0].value} ${parts[2].value}, ${parts[4].value}`;
+                dateElems[i].style = "display: block";
+            }
+        });
+    </script>
     <posts/>
 </ul>
