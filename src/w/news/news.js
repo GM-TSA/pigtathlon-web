@@ -10,4 +10,11 @@ for (let postPath in posts.list) {
 }
 main = main.toString().replace("<posts/>", postsString);
 
-module.exports = page(main);
+module.exports = page(
+    main,
+    {
+        title: "News",
+        description: "Get news and updates about what we're developing in our dev log posts!",
+        canonical: "https://pigtathlon.claytondoesthings.xyz/w/subscribe"
+    }
+);
