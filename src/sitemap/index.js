@@ -13,7 +13,7 @@ for (let i in newsPostsList) {
         <loc>https://pigtathlon.claytondoesthings.xyz/w/news/posts/${i}</loc>
         <lastmod>${dateString}</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
         <news:news>
             <news:publication>
                 <news:name>Pigtathlon News</news:name>

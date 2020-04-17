@@ -5,7 +5,8 @@ module.exports = (req, res) => {
     var fileName = req.params.postFileName;
     if (Object.keys(postsList).includes(fileName)) {
         let post = postsList[fileName];
-        res.send(page(post.content,
+        res.send(page(
+            post.content,
             {
                 title: post.title + " - News",
                 description: post.sub,
